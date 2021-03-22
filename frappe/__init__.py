@@ -272,9 +272,9 @@ def msgprint(msg, title=None, raise_exception=0, as_table=False, indicator=None,
 				db.rollback()
 			import inspect
 
-			if inspect.isclass(raise_exception) and issubclass(raise_exception, Exception):
+			#if inspect.isclass(raise_exception) and issubclass(raise_exception, Exception):
 				#raise raise_exception, encode(msg)
-			else:
+			#else:
 				#raise ValidationError, encode(msg)
 
 	if flags.mute_messages:
