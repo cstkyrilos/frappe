@@ -1,0 +1,145 @@
+/* the element that this class is applied to, should have a max width for this to work*/
+.page-container {
+  margin-top: 40px;
+}
+.page-head {
+  border-bottom: 1px solid #d1d8dd;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 41px;
+  margin: auto;
+  background-color: #fff;
+  z-index: 101;
+}
+.sub-heading {
+  display: inline-block;
+  margin-right: 10px;
+  max-width: 50%;
+  vertical-align: middle;
+}
+@media (min-width: 767px) {
+  .page-body {
+    overflow-x: hidden;
+    min-height: calc(60vh);
+  }
+}
+.page-title {
+  position: relative;
+}
+.page-title h6 {
+  margin-top: -8px;
+}
+.page-title h1 {
+  margin-top: 17px;
+}
+.page-title .indicator {
+  vertical-align: middle;
+}
+.page-title .title-text {
+  margin-right: 7px;
+  max-width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-title .title-image {
+  display: inline-block;
+  width: 46px;
+  height: 0;
+  padding: 23px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  line-height: 0;
+  float: left;
+}
+.editable-title .title-text {
+  cursor: pointer;
+}
+.editable-title .title-text:hover {
+  background-color: #fffce7;
+}
+.page-actions {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.page-icon-group {
+  vertical-align: middle;
+}
+.page-icon-group a {
+  margin-right: 7px;
+}
+.page-content {
+  margin-top: 70px;
+}
+/* show menu aligned to the right border of the dropdown */
+.page-actions .dropdown-menu,
+.form-inner-toolbar .dropdown-menu {
+  right: 0px;
+  left: auto;
+}
+.layout-main-section {
+  border: 1px solid #d1d8dd;
+  border-top: 0px;
+}
+.layout-main-section-wrapper {
+  margin-bottom: 60px;
+}
+.layout-footer {
+  border: 1px solid #d1d8dd;
+  border-top: 0px;
+  padding: 3px 15px;
+  font-size: 12px;
+}
+.page-form {
+  margin: 0px;
+  padding-top: 15px;
+  border-bottom: 1px solid #d1d8dd;
+}
+.page-form .form-group {
+  margin-bottom: 15px;
+}
+.page-form .checkbox {
+  margin-top: 2px;
+}
+select.input-sm {
+  line-height: 1.2em !important;
+}
+.message-page {
+  padding-top: 10rem;
+}
+.message-page .message-page-icon {
+  font-size: 10rem;
+  margin-bottom: 1rem;
+}
+.message-page .message-page-image {
+  margin-bottom: 1rem;
+}
+.message-page .btn-home {
+  margin-top: 1rem;
+}
+@media (max-width: 991px) {
+  .page-head .page-title h1 {
+    font-size: 22px;
+    margin-top: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .page-actions {
+    max-width: 150px;
+    float: right;
+  }
+  .page-title {
+    position: absolute;
+    left: 0;
+    right: 101px;
+    width: 100%;
+  }
+  .page-head .page-title h1 {
+    font-size: 18px;
+  }
+}
